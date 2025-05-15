@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travel Goals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Oleo+Script:wght@700&family=Quicksand:wght@300;500&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: #f0f7f7;
+      color: #222;
+    }
+
+    header {
+      background-color: #ffffff;
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      font-family: 'Oleo Script', cursive;
+      font-weight: 700;
+      font-size: 24px;
+    }
+    #page-logo a {
+      color: #ffff00;
+      text-decoration: 0;
+      letter-spacing: 1.2px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      font-weight: 700;
+      font-family: 'Raleway', sans-serif;
+      font-size: 16px;
+    }
+    nav ul li a {
+      color: #ddff00;
+      text-decoration: 0;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #ffeb3b;
+    }
+
+    #hero {
+      position: relative;
+      background: url('ocean.jpg') center/cover no-repeat;
+      height: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #hero-content {
+      background: rgba(34,34,34,0.7);
+      padding: 30px 50px;
+      text-align: center;
+      color: white;
+      border-radius: 4px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+    #hero-content h1 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      margin-bottom: 8px;
+      font-size: 32px;
+    }
+    #hero-content p {
+      font-weight: 300;
+      margin-bottom: 15px;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+    #hero-content a {
+      background-color: #ffeb3b;
+      color: #222;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 8px 20px;
+      border-radius: 3px;
+      transition: background-color 0.3s ease;
+      font-family: 'Raleway', sans-serif;
+    }
+    #hero-content a:hover {
+      background-color: #fdd835;
+    }
+
+    #highlights {
+      background-color: #dbf1f9;
+      padding: 25px 40px 40px 40px;
+      text-align: center;
+    }
+    #highlights h2 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      margin-bottom: 20px;
+      font-size: 20px;
+      color: #222;
+    }
+    #destinations {
+  list-style: none;
+  display: flex;
+  justify-content: space-between; 
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.destination {
+  flex: 1; 
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  max-width: 100%; 
+}
+
+.destination:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.destination img {
+  width: 100%;
+  height: 180px; 
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.destination p {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #444;
+  padding: 10px 0;
+  letter-spacing: 0.5px;
+}
+
+.destination strong {
+  font-weight: 700;
+  color: #3aabf3;
+}
+
+
+    footer {
+      background-color: #222;
+      padding: 10px 40px;
+      text-align: center;
+    }
+    footer ul {
+      list-style: none;
+      display: inline-flex;
+      gap: 30px;
+      align-items: center;
+      padding: 0;
+    }
+    footer ul li a img {
+      width: 25px;
+      height: 25px;
+      filter: grayscal(100%);
+      transition: filter 0.3s ease;
+    }
+    footer ul li a:hover img {
+      filter: invert(60%) sepia(100%) saturate(500%) hue-rotate(180deg);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="page-logo">
+      <a href="/index.html">Travel Goals</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/places.html">Destinations</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" aria-label="Hero image with title and call to action">
+      <div id="hero-content">
+        <h1>Joe's Travel Page</h1>
+        <p>Let's explore the world together!</p>
+        <a href="/places.html">Discover places</a>
+      </div>
+    </section>
+
+    <section id="highlights">
+      <h2>Highlights</h2>
+      <ul id="destinations">
+        <li class="destination">
+          <img src="miami.jpg" alt="Miami streets on sunny day" />
+          <p>Miami <strong>USA</strong></p>
+        </li>
+        <li class="destination">
+          <img src="munich.jpg" alt="Munich stadium in winter" />
+          <p>Munich <strong>Germany</strong></p>
+        </li>
+        <li class="destination">
+          <img src="barcelona.jpg" alt="Palm beach in Barcelona" />
+          <p>Barcelona <strong>Spain</strong></p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <ul>
+      <li>
+        <a href="https://www.instagram.com" aria-label="Instagram">
+          <img src="icons/insta.png" alt="Instagram logo" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com" aria-label="Facebook">
+          <img src="icons/facebook.png" alt="Facebook logo" />
+        </a>
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>
